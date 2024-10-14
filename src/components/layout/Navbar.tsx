@@ -13,7 +13,8 @@ function Navbar() {
   const   userName  = formatUserName('Immaculata Ojadi')
   return (
     <nav className="fixed top-0  left-[278px] h-[61px] p-1 right-0 bg-primary-white shadow z-20">
-    <div className="container  mx-auto  flex justify-between">
+      <div className='xl:w-[1110px] lg:w-[900px]'>
+      <div className="container  mx-auto  flex justify-between">
         <div className="text-base p-4 ml-3 font-extrabold text-accent-text"> Visitors Management System</div>
         <div className='flex gap-3 p-2 cursor-default'>
           <div className='flex w-[35px] h-10 text-base font-medium 
@@ -30,6 +31,8 @@ function Navbar() {
           </div>
         </div>
     </div>
+      </div>
+  
 </nav>
   )
 }

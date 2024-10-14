@@ -7,7 +7,7 @@
 export const formatUserName = (username: string) => {
     if (username) {
       const splitString = username.split(" ");
-      const userShortName = splitString[0] + " " + splitString[1].charAt(0);
+      const userShortName = splitString[0] + " " + splitString[1].charAt(0) + '.';
       const userInitials = splitString[0].charAt(0) + splitString[1].charAt(0);
       return { userShortName, userInitials };
     }

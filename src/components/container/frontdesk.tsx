@@ -1,14 +1,35 @@
 import React from 'react'
+import {UserDetail} from '../userDetailComponent'
+import { formatUserName } from '../../utils/utils';
+import { SmallBoxTitle } from '../headings';
 
 function FrontDeskOfficers() {
+  // const   userName  = formatUserName('Abayomi Sowe')
+  // const   userName2  = formatUserName('Segun Aiye')
+   const   userName3  = formatUserName('Ifeanyi Ndu')
+   const   userName4  = formatUserName('Mayowa Abolaji')
+
     const styles = {
-        responsiveness: 'xl:w-[253px] lg:w-[190px] 2xl:w-[270px]',
-        style: 'min-h-[150px] rounded-[5px] border-primary-gray-200 border bg-primary-white'
+        responsiveness: 'xl:w-[253px] lg:w-[200px] md:w-[180px]',
+        style: 'min-h-[150px] rounded-[5px] px-2 py-5 overflow-hidden border-primary-gray-200 border bg-primary-white'
         
        } 
   return (
     <div className={`${styles.responsiveness} ${styles.style}`}>
-      Frondesk
+      <div>
+     <div className='pb-5 px-1'>
+         <SmallBoxTitle title='Front desk officers' />
+       </div>
+         <div className='pb-6'>
+         <UserDetail username={userName3?.userShortName} userInitials={userName3?.userInitials} phone="09087675432" date="18-11-2024" />
+       </div>
+       <div className='pb-6'>
+         <UserDetail username={userName4?.userShortName} userInitials={userName4?.userInitials} phone="09087675432" date="tomorrow" />
+       </div>
+       </div>
+       <div className='text-xs font-medium cursor-pointer text-primary-gray-500'>
+        USER MANAGEMENT   {'  >'}
+     </div>
     </div>
   )
 }

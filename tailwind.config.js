@@ -8,7 +8,7 @@ module.exports = {
       'md': '1024px',     // Medium screen (matches existing)
       'lg': '1280px',     // Large screen (matches existing)
       'xl': '1440px',     // Extra large screen
-      '2xl': '1600px', 
+      '2xl': '1900px', 
     },
     colors: {
       'accent': '#011C33',

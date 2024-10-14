@@ -15,11 +15,11 @@ function Dashboard() {
         <Card />
         </div>
       </div>
-      <div className="lg:flex lg:flex-row mx-1 sm:flex-col   mt-6 gap-4">
+      <div className="md:flex md:flex-row mx-1 sm:flex-col   mt-6 gap-4">
         <ChartContainer />
         <PurposeContainer />
       </div>
-      <div className='lg:flex lg:flex-row mx-1 sm:flex-col mt-6 gap-4'>
+      <div className='md:flex md:flex-row mx-1 sm:flex-col mt-6 gap-4'>
          <TableContainer />
           <div className='flex-col gap-4 '>
           <UpcomingContainer />

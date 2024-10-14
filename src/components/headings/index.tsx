@@ -8,8 +8,8 @@ export const WelcomeHeading = () => {
   )
 }
 
-export const SmallBoxTitle = ({ firstTitle }: SmallBoxTitleProps) => {
+export const SmallBoxTitle = ({ title }: SmallBoxTitleProps) => {
   return (
-     <Title firstTitle={firstTitle} />
+     <Title title={title} />
   )
 }
