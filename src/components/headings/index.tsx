@@ -1,5 +1,5 @@
 import React from 'react'
-import DashboardHeading, {Title, SmallBoxTitleProps } from './Dashboard'
+import DashboardHeading, {Title, SmallBoxTitleProps, TableBoxTitleProps, TableTitle } from './Dashboard'
 
 
 export const WelcomeHeading = () => {
@@ -11,5 +11,11 @@ export const WelcomeHeading = () => {
 export const SmallBoxTitle = ({ title }: SmallBoxTitleProps) => {
   return (
      <Title title={title} />
+  )
+}
+
+export const TableBoxTitle = ({ title, subtitle }: TableBoxTitleProps) => {
+  return (
+     <TableTitle title={title} subtitle={subtitle} />
   )
 }

@@ -1,37 +1,36 @@
 import React from 'react'
 
-
-export interface UserDetailType  {
+export interface TableUserDetailType  {
   userInitials?: string,
   username?: string,
   phone?: string,
-  date?: string,
-  status?: string
+  status?: boolean
 }
 
-function UserDetailComponent({username, userInitials, phone, date, status}: UserDetailType) {
+function TableUserDetailComponent({username, userInitials, phone, status }: TableUserDetailType) {
     
   return (
     <div className='flex justify-between'>
           <div className='flex gap-2 cursor-default'>
-          <div className='flex w-[36px] h-[36px] text-base font-medium 
+          {
+            status && 
+            <div className='flex w-[40px] h-[40px] text-base font-medium 
           rounded-[50%] border items-center justify-center  border-accent-text'>
               {userInitials}
           </div>
+          }
           <div className='flex-col '>
             <div className='text-xs mb-1 font-extrabold text-dark-text'>
-               {username}
+               {(username && username?.length > 15) ? username?.slice(0, 13) + '..' : username  }
             </div>
             <div className='text-xs font-medium '>
                <span className='text-primary-gray-500'>{phone}</span>
             </div>
           </div>
         </div>
-        <div className='text-xs font-medium mt text-primary-gray-500'>
-           {date || status}
-        </div>
+      
     </div>
   )
 }
 
-export default UserDetailComponent
+export default TableUserDetailComponent

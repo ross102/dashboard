@@ -21,10 +21,10 @@ function FrontDeskOfficers() {
          <SmallBoxTitle title='Front desk officers' />
        </div>
          <div className='pb-6'>
-         <UserDetail username={userName3?.userShortName} userInitials={userName3?.userInitials} phone="09087675432" date="18-11-2024" />
+         <UserDetail username={userName3?.userShortName} userInitials={userName3?.userInitials} phone="09087675432" status="Active" />
        </div>
        <div className='pb-6'>
-         <UserDetail username={userName4?.userShortName} userInitials={userName4?.userInitials} phone="09087675432" date="tomorrow" />
+         <UserDetail username={userName4?.userShortName} userInitials={userName4?.userInitials} phone="09087675432" status="Not Active" />
        </div>
        </div>
        <div className='text-xs font-medium cursor-pointer text-primary-gray-500'>

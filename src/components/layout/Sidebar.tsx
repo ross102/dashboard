@@ -7,9 +7,9 @@ function Sidebar() {
 
  const styles = {
    navClassNames: `flex  pl-4 items-center gap-[19px]  h-[54px]
-    rounded-[5px]  text-primary-white  hover:bg-primary-white hover:text-accent transition-all duration-6000 ease-in-out hover:mt-1`,
+    rounded-[5px]  text-primary-white  hover:bg-primary-white hover:mr-1 hover:text-accent transition-all duration-6000 ease-in-out hover:mt-1`,
 
-    activeNavClassnames: `flex  pl-4 items-center gap-[19px]  h-[54px]
+    activeNavClassnames: `flex  pl-4 mr-1 items-center gap-[19px]  h-[54px]
     rounded-[5px]  bg-primary-white text-accent`,
 
    iconClassNames: "w-[18px] h-[18px] hover:text-accent"
@@ -24,8 +24,8 @@ function Sidebar() {
           {
             navdata?.map((el,i)=> {
               return (
-                <div>
-                  <li><a href={el.link} className={getActiveUrl(el?.link) ? styles.activeNavClassnames : styles.navClassNames}>
+                <div key={i}>
+                  <li ><a href={el.link} className={getActiveUrl(el?.link) ? styles.activeNavClassnames : styles.navClassNames}>
                   <span className='mt-1 '>
                     {getActiveUrl(el?.link) ? el.activeIcon: el.icon }
                     </span>{el.label}</a></li>

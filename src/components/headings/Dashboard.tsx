@@ -4,6 +4,11 @@ export interface SmallBoxTitleProps {
   title: string
 } 
 
+export interface TableBoxTitleProps {
+  title: string
+  subtitle: string
+} 
+
 function DashboardHeading() {
   return (
     <div className=' '>
@@ -22,5 +27,16 @@ export const Title = ({title}: SmallBoxTitleProps) => {
     </div>
   )
 }
+
+// Table box title
+export const TableTitle = ({title, subtitle}: TableBoxTitleProps) => {
+  return (
+    <div className='flex flex-col gap-1'>
+      <h4 className='text-accent-text font-extrabold text-base'>{title}</h4>
+      <div className='text-primary-gray-500 font-medium text-sm'>{subtitle}</div>
+    </div>
+  )
+}
+
 
 export default DashboardHeading
