@@ -11,7 +11,7 @@ function FrontDeskOfficers() {
 
     const styles = {
         responsiveness: 'xl:w-[253px] lg:w-[200px] md:w-[180px]',
-        style: 'min-h-[150px] rounded-[5px] px-2 py-5 overflow-hidden border-primary-gray-200 border bg-primary-white'
+        style: 'min-h-[150px] rounded-[5px] px-2 py-5 shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border-primary-gray-200 border bg-primary-white'
         
        } 
   return (

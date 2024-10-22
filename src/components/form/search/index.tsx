@@ -10,7 +10,7 @@ function Search() {
       <input 
       className={styles.searchInputClass}
       type='search' 
-      placeholder='Search for visitor by name phone number' 
+      placeholder='Search by name, phone number' 
       
       />
     </div>

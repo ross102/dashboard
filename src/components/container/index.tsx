@@ -4,6 +4,8 @@ import Upcomingbox from './upcomingBox'
 import Purposebox from './purposeBox'
 import Tablebox from './tablebox'
 import FrontDeskOfficers from './frontdesk'
+import VisitorTablebox from './visitorstablebox'
+import UsersTablebox from './usersTablebox'
 
 export const ChartContainer = () => {
     return (
@@ -29,7 +31,7 @@ export const UpcomingContainer = () => {
     )
 } 
 
-export const TableContainer = () => {
+export const DashboardTableContainer = () => {
     return (
       <div>
        <Tablebox />
@@ -41,6 +43,22 @@ export const FrontDeskContainer = () => {
   return (
     <div>
      <FrontDeskOfficers />
+    </div>
+  )
+} 
+
+export const VisitorsTableContainer = () => {
+  return (
+    <div>
+     <VisitorTablebox />
+    </div>
+  )
+} 
+
+export const UsersTableContainer = () => {
+  return (
+    <div>
+     <UsersTablebox />
     </div>
   )
 } 

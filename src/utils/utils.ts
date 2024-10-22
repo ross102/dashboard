@@ -45,37 +45,40 @@ export const onlyNumberInput = (e: any) => {
  * Custom Grid Component styling
  * header color - primary-color
  */
-export const customGridStyles = {
-    rows: {
-      style: {
-        minHeight: "48px",
-        fontSize: "12px",
-        fontWeight: 500,
+export const customGridStyles:any = {
+    // rows: {
+    //   style: {
+    //     minHeight: "48px",
+    //     fontSize: "12px",
+    //     fontWeight: 500,
   
-        lineHeight: "16px",
-        textTransform: "uppercase",
-        "&:not(:last-of-type)": {
-          borderBottomStyle: "solid",
-          borderBottomWidth: "1px",
-          borderBottomColor: "#ffffff",
-        },
-      },
-    },
+    //     lineHeight: "16px",
+    //     textTransform: "uppercase",
+    //     "&:not(:last-of-type)": {
+    //       borderBottomStyle: "solid",
+    //       borderBottomWidth: "1px",
+    //       borderBottomColor: "#ffffff",
+    //     },
+    //   },
+    // },
   
     headCells: {
       style: {
-        lineHeight: "18px",
+        height: '40px',
+        lineHeight: "26px",
         fontSize: "12px",
-        fontWeight: 800,
-        textTransform: "uppercase",
+        fontWeight: 500,
+        fontFamily: "Avenir",
+       
+        // textTransform: "uppercase",
       },
     },
     headRow: {
       style: {
-        color: "#ffffff",
-        backgroundColor: "#004987",
-        border: "1px solid #004987",
-        borderRadius: "5px 5px 5px 5px",
+        // color: "#ffffff",
+        // backgroundColor: "#004987",
+        // border: "1px solid #004987",
+        // borderRadius: "5px 5px 5px 5px",
       },
     },
   };

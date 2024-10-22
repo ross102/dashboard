@@ -5,7 +5,7 @@ import { SmallBoxTitle } from '../headings'
 function Purposebox() {
     const styles = {
         responsiveness: 'xl:w-[253px] md:w-[200px]',
-        style: 'h-[328px] rounded-[5px] p-6 overflow-hidden border-primary-gray-200 flex-col justify-between border bg-primary-white'
+        style: 'h-[328px] shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-[5px] p-6 overflow-hidden border-primary-gray-200 flex-col justify-between border bg-primary-white'
         
        } 
   return (

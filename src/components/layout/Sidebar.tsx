@@ -7,7 +7,7 @@ function Sidebar() {
 
  const styles = {
    navClassNames: `flex  pl-4 items-center gap-[19px]  h-[54px]
-    rounded-[5px]  text-primary-white  hover:bg-primary-white hover:mr-1 hover:text-accent transition-all duration-6000 ease-in-out hover:mt-1`,
+    rounded-[5px]  text-primary-white  hover:bg-primary-white hover:mr-1 hover:text-accent transition-all duration-300 ease-in-out hover:my-1`,
 
     activeNavClassnames: `flex  pl-4 mr-1 items-center gap-[19px]  h-[54px]
     rounded-[5px]  bg-primary-white text-accent`,

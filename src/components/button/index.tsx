@@ -6,16 +6,18 @@ export interface ButtonPrimaryType {
     width: string
     className: string,
     text: string
+    handleClick?: () => void
 }
 // width: 162,
 // height: 48
 
-function ButtonPrimary({height, width, className, text} : ButtonPrimaryType) {
+function ButtonPrimary({height, width, className, text, handleClick} : ButtonPrimaryType) {
   return (
     <div>
         <button
-         className={`${className} rounded-[5px] bg-accent
-          text-primary-white flex p-3 gap-2  font-medium text-base`}
+         onClick={handleClick}
+         className={`${className} rounded-[5px] 
+          text-primary-white flex p-3 gap-2 hover:animate-pulse font-medium text-base`}
          style={{
             height,
             width

@@ -18,18 +18,21 @@ export const navdata = [
     {
         label: 'Visitors',
         icon: <VisitorsIcon className='w-[18px] h-[18px] sidebar-svgicon'  />,
+        activeIcon: <VisitorsIcon className='w-[18px] h-[18px] sidebar-svgicon-active' />,
         link: "/admin/visitors",
         alt: "visitors sidebar icon"
     },
     {
         label: 'User Management',
         icon: <UsersIcon className='w-[18px] h-[18px] sidebar-svgicon' />,
+        activeIcon: <UsersIcon className='w-[18px] h-[18px] sidebar-svgicon-active' />,
         link: "/admin/user-management",
         alt: "user sidebar icon"
     } ,
     {
         label: 'Reports',
         icon: <ReportsIcon className='w-[18px] h-[18px] sidebar-svgicon' />,
+        activeIcon: <ReportsIcon className='w-[18px] h-[18px] sidebar-svgicon-active' />,
         link: "/admin/reports",
         alt: "reports sidebar icon"
     }

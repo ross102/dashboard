@@ -5,7 +5,7 @@ import { cardItems } from '../utils/CardContent'
 function Card() {
  const styles = {
   responsiveness: 'xl:w-[270px] lg:w-[210px] md:w-[200px]',
-  style: 'h-[100px] rounded-[5px]  border-primary-gray-200 border bg-primary-white'
+  style: 'h-[100px] rounded-[5px] shadow-sm hover:shadow-xl transition-shadow duration-300 border-primary-gray-200 border bg-primary-white'
   
  } 
   return (

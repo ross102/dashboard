@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../components/cards'
 import {WelcomeHeading} from '../../components/headings'
-import { ChartContainer, FrontDeskContainer, PurposeContainer, TableContainer, UpcomingContainer } from '../../components/container'
+import { ChartContainer, FrontDeskContainer, PurposeContainer, DashboardTableContainer, UpcomingContainer } from '../../components/container'
 
 function Dashboard() {
   return (
@@ -20,7 +20,7 @@ function Dashboard() {
         <PurposeContainer />
       </div>
       <div className='md:flex md:flex-row mx-1 sm:flex-col mt-6 gap-4'>
-         <TableContainer />
+         <DashboardTableContainer />
           <div className='flex-col gap-4 '>
           <UpcomingContainer />
           <div className='mt-6'>

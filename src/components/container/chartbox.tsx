@@ -4,7 +4,7 @@ import VisitorsChart from '../charts'
 function Chartbox() {
     const styles = {
         responsiveness: 'xl:w-[859px] lg:w-[670px] md:w-[580px] ',
-        style: 'h-[328px] rounded-[5px] px-1 pt-6 pb-2 overflow-hidden border-primary-gray-200 border bg-primary-white'
+        style: 'h-[328px] rounded-[5px] px-1 pt-6 pb-2 shadow-sm hover:shadow-xl transition-shadow duration-300  overflow-hidden border-primary-gray-200 border bg-primary-white'
         
        } 
   return (
